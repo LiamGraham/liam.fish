@@ -5,11 +5,13 @@ const DEFAULT_STYLE = { color: 'inherit' }
 
 export function ColourLink(props) {
   const [active, setActive] = useState(false);
-  const [style, setStyle] = useState({color: 'inherit'});
+  const [style, setStyle] = useState(DEFAULT_STYLE);
 
   useEffect(() => {
     if (active) {
       setStyle({color: randomColor()});
+    } else if (props.reset) {
+      setStyle(DEFAULT_STYLE)
     }
   }, [active]);
 
