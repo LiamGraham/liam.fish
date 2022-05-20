@@ -1,0 +1,31 @@
+{
+  "name": "liam.fish",
+  "version": "1.0.4",
+  "description": "",
+  "type": "module",
+  "scripts": {
+    "build": "npx parcel build src/index.html",
+    "start": "npx parcel src/index.html",
+    "deploy": "npx gh-pages -d dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LiamGraham/liamgraham.github.io.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/LiamGraham/liamgraham.github.io/issues"
+  },
+  "homepage": "https://liamgraham.github.io/liamgraham.github.io",
+  "devDependencies": {
+    "gh-pages": "^4.0.0",
+    "parcel": "^2.5.0"
+  },
+  "dependencies": {
+    "randomcolor": "^0.6.2",
+    "react": "^18.1.0",
+    "react-dom": "^18.1.0"
+  }
+}
