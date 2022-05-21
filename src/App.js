@@ -1,15 +1,16 @@
 import randomColor from 'randomcolor';
 import { useEffect, useState } from 'react';
-import { ColourLink } from './ColourLink.js';
+import { ColorLink } from './ColorLink.js';
 
 const COLOUR_CHANGE_INTERVAL = 500;
 
 export function App() {
   const [style, setStyle] = useState({ color: "black" });
   useEffect(() => {
-    setTimeout(() => {
+    const timer = setTimeout(() => {
       setStyle({ color: randomColor() });
     }, COLOUR_CHANGE_INTERVAL)
+    return () => clearTimeout(timer);
   });
 
   return (
@@ -19,12 +20,12 @@ export function App() {
       <p className='bio'>
         I'm a software engineer. I graduated from the University of Queensland  
         in 2020 with a Bachelor of Engineering (Honours Class I). I'm currently working as
-        a Graduate Software Engineer at the <ColourLink href='https://www.chde.qld.gov.au/'>Department 
-        of Communities, Housing and Digital Economy</ColourLink>. Here's 
-        my <ColourLink href='https://github.com/liamgraham'>GitHub</ColourLink> and <ColourLink href='https://www.linkedin.com/in/liam-graham/'>LinkedIn</ColourLink>.
+        a Graduate Software Engineer at the <ColorLink href='https://www.chde.qld.gov.au/' mode='cycle'>Department 
+        of Communities, Housing and Digital Economy</ColorLink>. Here's 
+        my <ColorLink href='https://github.com/liamgraham'>GitHub</ColorLink> and <ColorLink href='https://www.linkedin.com/in/liam-graham/'>LinkedIn</ColorLink>.
       </p>
       <p className='bio'>
-        I also make music as <ColourLink href='https://theyalright.com'>Theyalright</ColourLink>. 
+        I also make music as <ColorLink href='https://theyalright.com'>Theyalright</ColorLink>. 
       </p>
     </main>
   );

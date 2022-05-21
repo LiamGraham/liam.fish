@@ -1,26 +1,27 @@
 import randomColor from 'randomcolor';
 import { useEffect, useState } from 'react'
 
-const DEFAULT_STYLE = { color: 'inherit' }
+const DEFAULT_STYLE = 'inherit'; 
 
-export function ColourLink(props) {
+export function ColorLink(props) {
+  const {href, reset} = props;
   const [active, setActive] = useState(false);
-  const [style, setStyle] = useState(DEFAULT_STYLE);
+  const [color, setColor] = useState(DEFAULT_STYLE);
 
   useEffect(() => {
     if (active) {
-      setStyle({color: randomColor()});
-    } else if (props.reset) {
-      setStyle(DEFAULT_STYLE)
+      setColor(randomColor());
+    } else if (reset) {
+      setColor(DEFAULT_STYLE)
     }
   }, [active]);
 
   return (
     <a
-      href={props.href}
+      href={href}
       onMouseOut={() => setActive(false)}
       onMouseOver={() => setActive(true)}
-      style={style}
+      style={{color}}
     >
       {props.children}
     </a>
