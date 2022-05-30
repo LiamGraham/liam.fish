@@ -29,10 +29,3 @@ jobs:
           cname: liam.fish
         env:
           GITHUB_TOKEN: ${{ secrets.github_token }}
-      - name: Patch version
-        run: |
-          git config user.name "$(git log -n 1 --pretty=format:%an)"
-          git config user.email "$(git log -n 1 --pretty=format:%ae)"
-          npm version patch -m "[skip actions] version %s"
-          git push -o ci.skip origin
-          git push -o ci.skip origin --tags
