@@ -20,7 +20,7 @@ export function App() {
       <p className='bio'>
         I'm a software engineer. I graduated from the University of Queensland  
         in 2020 with a Bachelor of Engineering (Honours Class I). I'm currently working as
-        a Backend Engineer at <ColorLink href='https://maxkelsen.com/' mode='cycle'>Max Kelsen</ColorLink>. Here's 
+        a Backend Engineer at <ColorLink href='https://www.propelhealth.ai/' mode='cycle'>Propel Health AI</ColorLink>. Here's 
         my <ColorLink href='https://github.com/liamgraham'>GitHub</ColorLink> and <ColorLink href='https://www.linkedin.com/in/liam-graham/'>LinkedIn</ColorLink>.
       </p>
       <p className='bio'>
