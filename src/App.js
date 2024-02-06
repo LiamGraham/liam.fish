@@ -22,7 +22,7 @@ export function App() {
         in 2020 with a Bachelor of Engineering (Honours Class I). I'm currently working as
         a Principal Platform Engineer at <ColorLink href='https://www.worksafe.qld.gov.au/' mode='cycle'>WorkCover Queensland</ColorLink>. Here's 
         my <ColorLink href='https://github.com/liamgraham'>GitHub</ColorLink> and <ColorLink href='https://www.linkedin.com/in/liam-graham/'>LinkedIn</ColorLink>.
-        I also make music as <ColorLink href='https://theyalright.com'>Theyalright</ColorLink>. 
+        I also make music as <ColorLink href='https://soundcloud.com/theyalright/popular-tracks'>Theyalright</ColorLink>. 
       </p>
     </main>
   );
