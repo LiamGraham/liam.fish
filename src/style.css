@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@700&family=Open+Sans:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@700&family=Manrope:wght@500&display=swap');
 
 * { 
   margin: 0;
@@ -7,50 +7,41 @@
 
 @media (max-width: 1000px) {
   body {
-    font-size: 12px;
+    font-size: 14px;
   }
 }
 
 @media (max-width: 600px) {
   body {
-    font-size: 10px;
+    font-size: 12px;
   }
-
-  main {
-    top: 50% !important;
-    width: 70% !important;
-  }
-}
-
-@media (prefers-color-scheme: light) {
-}
-
-@media (prefers-color-scheme: dark) {
 }
 
 body {
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Manrope', sans-serif;
 }
 
 main {
-  display: flex;
-  flex-flow: column;
-  width: 60%;
-  gap: 2em;
-  position: fixed;
-  top: 40%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+    width: 100vw;
+    height: 100vh;
+    box-sizing: border-box;
+    overflow: auto;
+    padding: 20px;
+    word-wrap: break-word;
+}
+
+::selection {
+  color: white;
+  background-color: black;
 }
 
 h1 {
-  font-family: 'Lato', sans-serif;
   font-weight: 700;
   font-size: 4em;
 }
 
 .bio {
-  font-size: 2em;
+  font-size: 3em;
 }
 
 a {
@@ -61,4 +52,16 @@ a {
 
 a:hover {
   color: blue;
+}
+
+@keyframes colorChange {
+  0% { color: blue; }
+  25% { color: green; }
+  50% { color: red; }
+  75% { color: rgb(143, 0, 172); }
+  100% { color: blue; }
+}
+
+.color-change-text {
+  animation: colorChange 10s ease infinite;
 }
