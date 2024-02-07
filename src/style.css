@@ -13,7 +13,7 @@
 
 @media (max-width: 600px) {
   body {
-    font-size: 12px;
+    font-size: 10px;
   }
   
   .experience {
@@ -118,4 +118,13 @@ a:hover {
   font-family: 'Spectral', serif;
   text-wrap: nowrap;
   color: blue;
+}
+
+.hover-image-block {
+  display: inline;
+}
+
+.hover-image {
+  width: 33%;
+  height: auto;
 }

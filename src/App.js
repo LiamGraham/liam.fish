@@ -4,6 +4,8 @@ import { ColorLink } from './ColorLink.js';
 import { BubbleText } from './BubbleText.js';
 import { FlexLine } from './FlexLine.js';
 import { HoverText } from './HoverText.js';
+import { HoverImage } from './HoverImage.js';
+import hoverImage from './images/me.jpeg'
 
 const COLOUR_CHANGE_INTERVAL = 500;
 
@@ -18,7 +20,11 @@ export function App() {
 
   return (
     <main>
-      <h1>Hi, I'm <span id="name">Liam.</span></h1>
+        <h1>Hi, I'm
+          <HoverImage image={hoverImage}>
+            <span id="name"> Liam.</span>
+          </HoverImage>
+        </h1>
       <p className='bio'>
         I'm a software engineer based in Naarm / Melbourne. I graduated from the University of Queensland  
         in 2020 with a Bachelor of Engineering (Honours Class I). I'm currently working as
