@@ -23,9 +23,8 @@ body {
 
 main {
     width: 100vw;
-    height: 100vh;
+    height: auto;
     box-sizing: border-box;
-    overflow: auto;
     padding: 20px;
     word-wrap: break-word;
 }
