@@ -5,7 +5,8 @@ import { BubbleText } from './BubbleText.js';
 import { FlexLine } from './FlexLine.js';
 import { HoverText } from './HoverText.js';
 import { HoverImage } from './HoverImage.js';
-import hoverImage from './images/me.jpeg'
+import portraitImage from './images/me.jpeg'
+import musicImage from './images/music.jpeg'
 
 const COLOUR_CHANGE_INTERVAL = 500;
 
@@ -21,18 +22,18 @@ export function App() {
   return (
     <main>
       <h1>Hi, I'm
-        <HoverImage image={hoverImage}>
+        <HoverImage image={portraitImage}>
           <span id="name"> Liam.</span>
         </HoverImage>
       </h1>
-      <p className='bio'>
+      <div className='bio'>
         I'm a software engineer based in Naarm / Melbourne. I graduated from the University of Queensland
         in 2020 with a Bachelor of Engineering (Honours Class I). I'm currently working as
         a Principal Platform Engineer at <HoverText text='&#x273B;'><ColorLink href='https://www.worksafe.qld.gov.au/' newTab reset>WorkCover Queensland</ColorLink></HoverText>. Here's
         my <HoverText text='&#x2609;'><ColorLink href='https://github.com/liamgraham' newTab reset>GitHub</ColorLink></HoverText> and <HoverText text='&#x2607;'><ColorLink href='https://www.linkedin.com/in/liam-graham/' newTab reset>LinkedIn</ColorLink></HoverText>.
-        I also make music as <HoverText text='&#x263B;'><ColorLink href='https://soundcloud.com/theyalright/popular-tracks' newTab reset>Theyalright</ColorLink></HoverText>.
+        I also make music as <HoverImage image={musicImage}><ColorLink href='https://soundcloud.com/theyalright/popular-tracks' newTab reset>Theyalright</ColorLink></HoverImage>.
         {/* <CycleText interval={250}>⅋☞☆☉☂♫✼✎</CycleText> */}
-      </p>
+      </div>
       <section className='experience'>
         <HoverText text='Principal Platform Engineer' fontFamily='Spectral'>
           <div className='role'>

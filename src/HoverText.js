@@ -16,14 +16,14 @@ export function HoverText(props) {
   };
 
   return (
-    <div 
+    <span
       onMouseMove={handleMouseMove} 
       onMouseLeave={handleMouseLeave}
       className='hover-text-block'
     >
       {props.children}
       {tooltip.visible && (
-        <div className='hover-text'
+        <span className='hover-text'
           style={{ 
             left: `${tooltip.x}px`, 
             top: `${tooltip.y}px`,
@@ -31,8 +31,8 @@ export function HoverText(props) {
           }}
         >
           {props.text}
-        </div>
+        </span>
       )}
-    </div>
+    </span>
   );
 };

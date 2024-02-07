@@ -21,7 +21,7 @@ export function HoverImage(props) {
   };
 
   return (
-    <div 
+    <span
       onMouseMove={handleMouseMove}
       onMouseEnter={handleMouseEnter}
       onMouseLeave={handleMouseLeave}
@@ -41,6 +41,6 @@ export function HoverImage(props) {
           }}
         />
       )}
-    </div>
+    </span>
   );
 };
