@@ -27,6 +27,7 @@ export function HoverText(props) {
           style={{ 
             left: `${tooltip.x}px`, 
             top: `${tooltip.y}px`,
+            fontFamily: props.fontFamily,
           }}
         >
           {props.text}
