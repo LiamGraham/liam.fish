@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@700&family=Manrope:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@700&family=Manrope:wght@500&family=Spectral:wght@300&display=swap');
 
 * { 
   margin: 0;
@@ -15,18 +15,26 @@
   body {
     font-size: 12px;
   }
+  
+  .experience {
+    display: none !important;
+  }
 }
 
 body {
   font-family: 'Manrope', sans-serif;
 }
 
+#name {
+  color: blue;
+}
+
 main {
-    width: 100vw;
-    height: auto;
-    box-sizing: border-box;
-    padding: 20px;
-    word-wrap: break-word;
+  width: 100vw;
+  height: 100vh;
+  box-sizing: border-box;
+  padding: 20px;
+  word-wrap: break-word;
 }
 
 ::selection {
@@ -41,6 +49,7 @@ h1 {
 
 .bio {
   font-size: 3em;
+  margin-bottom: 1em;
 }
 
 a {
@@ -53,14 +62,60 @@ a:hover {
   color: blue;
 }
 
-@keyframes colorChange {
-  0% { color: blue; }
-  25% { color: green; }
-  50% { color: red; }
-  75% { color: rgb(143, 0, 172); }
-  100% { color: blue; }
+.bubble-text {
+  background-color: black;
+  color: white;
+  border-radius: 30px;
+  font-family: 'Spectral', serif;
+  padding: 0 15px;
+  flex-grow: 0;
+  flex-shrink: 0;
+  flex-basis: auto;
 }
 
-.color-change-text {
-  animation: colorChange 10s ease infinite;
+.role:hover .bubble-text {
+  background-color: blue;
+  color: black;
+}
+
+.role:hover .role-text {
+  color: blue;
+}
+
+.experience {
+  display: flex;
+  flex-direction: column;
+  row-gap: 5px;
+  font-size: 2.6em;
+}
+
+.role {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.role-text {
+  margin-left: 15px;
+  word-wrap: break-word;
+  text-align: right;
+  margin-left: auto
+}
+
+.flex-line {
+  flex-grow: 1;
+  border-bottom: 2px solid black;
+  margin: 0 10px;
+}
+
+.hover-text {
+  position: fixed;
+  background: 'white';
+  border: '1px solid black';
+  padding: '5px';
+  font-size: 1em;
+  pointer-events: none;
+  font-family: 'Spectral', serif;
+  text-wrap: nowrap;
+  color: blue;
 }
