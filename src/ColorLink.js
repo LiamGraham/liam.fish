@@ -4,7 +4,7 @@ import { useEffect, useState } from 'react'
 const DEFAULT_STYLE = 'inherit'; 
 
 export function ColorLink(props) {
-  const {href, reset} = props;
+  const {href, reset, newTab} = props;
   const [active, setActive] = useState(false);
   const [color, setColor] = useState(DEFAULT_STYLE);
 
@@ -22,6 +22,7 @@ export function ColorLink(props) {
       onMouseOut={() => setActive(false)}
       onMouseOver={() => setActive(true)}
       style={{color}}
+      target={newTab ? '_blank' : '_self'}
     >
       {props.children}
     </a>

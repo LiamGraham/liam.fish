@@ -20,9 +20,9 @@ export function App() {
       <p className='bio'>
         I'm a software engineer based in Naarm / Melbourne. I graduated from the University of Queensland  
         in 2020 with a Bachelor of Engineering (Honours Class I). I'm currently working as
-        a Principal Platform Engineer at <ColorLink href='https://www.worksafe.qld.gov.au/' mode='cycle'>WorkCover Queensland</ColorLink>. Here's 
-        my <ColorLink href='https://github.com/liamgraham'>GitHub</ColorLink> and <ColorLink href='https://www.linkedin.com/in/liam-graham/'>LinkedIn</ColorLink>.
-        I also make music as <ColorLink href='https://soundcloud.com/theyalright/popular-tracks'>Theyalright</ColorLink>. 
+        a Principal Platform Engineer at <ColorLink href='https://www.worksafe.qld.gov.au/' newTab>WorkCover Queensland</ColorLink>. Here's 
+        my <ColorLink href='https://github.com/liamgraham' newTab>GitHub</ColorLink> and <ColorLink href='https://www.linkedin.com/in/liam-graham/' newTab>LinkedIn</ColorLink>.
+        I also make music as <ColorLink href='https://soundcloud.com/theyalright/popular-tracks' newTab>Theyalright</ColorLink>.
       </p>
     </main>
   );
