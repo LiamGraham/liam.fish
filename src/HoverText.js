@@ -19,7 +19,7 @@ export function HoverText(props) {
     <div 
       onMouseMove={handleMouseMove} 
       onMouseLeave={handleMouseLeave}
-      style={{ position: 'relative' }}
+      className='hover-text-block'
     >
       {props.children}
       {tooltip.visible && (

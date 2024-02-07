@@ -114,6 +114,11 @@ a:hover {
   margin: 0 10px;
 }
 
+.hover-text-block {
+  position: relative;
+  display: inline;
+}
+
 .hover-text {
   position: fixed;
   background: 'white';
@@ -124,6 +129,8 @@ a:hover {
   font-family: 'Spectral', serif;
   text-wrap: nowrap;
   color: blue;
+  display: inline;
+  z-index: 1;
 }
 
 .hover-image-block {
@@ -133,4 +140,5 @@ a:hover {
 .hover-image {
   width: 33%;
   height: auto;
+  z-index: 2;
 }
